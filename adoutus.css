@@ -1,0 +1,19 @@
+.header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .header-container h1 {
+            color: chocolate;
+        }
+
+        .header-container svg {
+            width: 200px;
+            height: 200px;
+        }
+
+        .section {
+            padding: 40px 0;
+        }

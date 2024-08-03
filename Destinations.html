@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel and Tourism</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        #map {
+            height: 500px; 
+            width: 60%;   
+        }
+
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+<section id="destinations" class="section bg-light">
+    <div class="container">
+        <u><h2 class="section-title text-center" style="color: darkblue;">Popular Destinations</h2></u>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="goa.jpg" class="card-img-top" alt="Goa" width="450px" height="350px">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: chocolate;"><u>Tropical Paradise</u></h3>
+                        <h4 style="color: chocolate;"><p class="card-text">Explore pristine beaches and vibrant coral reefs.<br>Discover our tropical paradise with crystal-clear waters and sandy beaches. It's the perfect place for a relaxing getaway</p></h4>
+                    </div><br>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="kashmir.jpg" class="card-img-top" alt="Kashmir" width="450px" height="350px">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: darkcyan;"><u>Mountain Retreat</u></h3>
+                        <h4 style="color: darkcyan;"><p class="card-text">Enjoy breathtaking hikes and serene mountain views.<br>Escape to the mountains for an invigorating adventure. Enjoy guided hikes, stunning vistas, and cozy lodges.</p></h4>
+                    </div><br>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="mumbai.jpg" class="card-img-top" alt="Mumbai" width="450px" height="350px">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: crimson;"><u>City Lights</u></h3>
+                        <h4 style="color: crimson"><p class="card-text">Experience the excitement of bustling cities and cultural landmarks.<br>Experience the vibrant energy of our favorite cities. Explore cultural landmarks, trendy neighborhoods, and delicious cuisine.</p></h4>
+                        
+                        <div class="container mt-5">
+                            <button type="button" class="btn btn-primary floating-button" data-toggle="modal" data-target="#taxiModal">
+                                <i class="fas fa-taxi"></i> Book a Tour
+                            </button>
+
+                        <div class="modal" id="taxiModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Book Your Tour Now</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                
+                                    <div class="modal-body">
+                                        <p>Enter your destination:</p>
+                                        <input type="text" class="form-control mb-3" placeholder="Pickup Location">
+                                        <p>Enter your package:</p>
+                                        <input type="text" class="form-control mb-3" placeholder="Destination">
+                                        <p>Select the dates:</p>
+                                        <input type="date" class="form-control mb-3">
+                                    </div>
+                
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success">Book Now</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
